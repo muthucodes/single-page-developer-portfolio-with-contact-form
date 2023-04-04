@@ -1,0 +1,683 @@
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  display: block;
+  font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  src: url("../assets/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+}
+body {
+  font-family: "SpaceGrotesk";
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 28px;
+  color: #ffffff;
+  background-color: #151515;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  /* WebKit */
+  width: 0;
+  height: 0;
+}
+
+.btn {
+  display: block;
+  background: none;
+  color: #ffffff;
+  border: none;
+  border-bottom: 2px solid #4ee1a0;
+  padding: 0 0 1rem 0;
+  font-size: 16px;
+  letter-spacing: 2.29px;
+  line-height: 26px;
+  text-transform: uppercase;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s;
+}
+.btn:hover {
+  color: #4ee1a0;
+}
+
+svg path {
+  transition: all 0.4s;
+}
+
+svg:hover path {
+  fill: #4ee1a0;
+}
+
+.header {
+  padding-bottom: 10.4rem;
+  overflow-x: hidden;
+}
+.header .header-container {
+  max-width: 1110px;
+  margin: 0 auto;
+  position: relative;
+}
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 3rem;
+  padding-top: 4rem;
+}
+.header .navbar .name-logo {
+  color: #ffffff;
+  height: 3.2rem;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.444444px;
+}
+.header .navbar .nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.2rem;
+  z-index: 2;
+}
+.header .navbar .nav-list .nav-list-item {
+  list-style: none;
+}
+.header .navbar .nav-list .nav-list-item .logo {
+  width: 25px;
+  height: 25px;
+}
+.header .section-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4rem;
+  width: 70%;
+  padding: 12.7rem 0;
+  overflow-x: hidden;
+}
+.header .section-hero h1 {
+  font-family: "SpaceGrotesk";
+  font-size: 8.8rem;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -2.5px;
+  z-index: 3;
+}
+.header .section-hero h1 .border-bottom {
+  border-bottom: 4px solid #4ee1a0;
+}
+.header .section-hero p {
+  width: 40%;
+  z-index: 3;
+  color: #aeaeae;
+}
+.header .section-hero .image-profile {
+  width: 44.5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.header .section-hero .pattern-circle {
+  width: 12.9rem;
+  position: absolute;
+  right: 40%;
+  bottom: 10%;
+  transform: translateX(50%);
+  z-index: 2;
+}
+.header .section-hero .pattern-rings {
+  width: 53rem;
+  position: absolute;
+  top: 20%;
+  transform: translateX(-50%);
+}
+
+.section-skills {
+  position: relative;
+  overflow-x: hidden;
+}
+.section-skills .skills-container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.section-skills .skills-container .skills {
+  padding: 5.8rem 0;
+  border-top: 2px solid #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5.8rem;
+  column-gap: 3rem;
+}
+.section-skills .skills-container .skills .skill .skill-name {
+  font-family: "SpaceGrotesk";
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -1.5px;
+}
+.section-skills .skills-container .skills .skill .experience {
+  color: #aeaeae;
+}
+.section-skills .pattern-rings {
+  position: absolute;
+  width: 53rem;
+  bottom: 0;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.section-projects {
+  padding: 5rem 0 14rem 0;
+}
+.section-projects .projects-container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.section-projects .projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 8rem;
+}
+.section-projects .projects-header h2 {
+  font-family: "SpaceGrotesk";
+  font-size: 8.8rem;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -2.5px;
+}
+.section-projects .projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 6.9rem;
+  column-gap: 3rem;
+}
+.section-projects .projects .project {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-projects .projects .project .project-image {
+  opacity: 1;
+  position: relative;
+}
+.section-projects .projects .project .project-image .hover-options {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4.8rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.5s ease;
+  opacity: 0;
+  z-index: 3;
+}
+.section-projects .projects .project .project-image:hover {
+  cursor: pointer;
+}
+.section-projects .projects .project .project-image:hover .hover-options {
+  opacity: 1;
+}
+.section-projects .projects .project .project-title {
+  font-family: "SpaceGrotesk";
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 34px;
+  text-transform: uppercase;
+}
+.section-projects .projects .project .project-skills-list {
+  list-style: none;
+  color: #aeaeae;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.footer {
+  background-color: #242424;
+  position: relative;
+}
+.footer .pattern-rings {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateX(-40%);
+}
+.footer .footer-container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.footer .footer-container .section-contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22rem;
+  padding: 8.4rem 0;
+}
+.footer .footer-container .section-contact-form .contact-form-text {
+  display: flex;
+  flex-direction: column;
+  gap: 3.6rem;
+}
+.footer .footer-container .section-contact-form .contact-form-text h2 {
+  font-family: "SpaceGrotesk";
+  font-size: 8.8rem;
+  font-weight: 700;
+  line-height: 88px;
+  letter-spacing: -2.5px;
+}
+.footer .footer-container .section-contact-form .contact-form-text p {
+  color: #aeaeae;
+}
+.footer .footer-container .section-contact-form .form {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+.footer .footer-container .section-contact-form .form input,
+.footer .footer-container .section-contact-form .form textarea {
+  color: #ffffff;
+  width: 100%;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  padding: 0 1.6rem 1.6rem 1.6rem;
+  border-bottom: 1px solid #ffffff;
+}
+.footer .footer-container .section-contact-form .form input::placeholder,
+.footer .footer-container .section-contact-form .form textarea::placeholder {
+  color: #aeaeae;
+}
+.footer .footer-container .section-contact-form .form input:focus::placeholder,
+.footer .footer-container .section-contact-form .form textarea:focus::placeholder {
+  color: transparent;
+}
+.footer .footer-container .section-contact-form .form textarea {
+  resize: none;
+}
+.footer .footer-container .section-contact-form .form .input-group {
+  transition: all 0.3s;
+  position: relative;
+}
+.footer .footer-container .section-contact-form .form .input-group .error-icon {
+  position: absolute;
+  display: inline-block;
+  width: 2.4rem;
+  height: 2.4rem;
+  right: 0;
+  top: 0;
+  color: red;
+  z-index: 5;
+}
+.footer .footer-container .section-contact-form .form .btn-submit {
+  align-self: end;
+}
+.footer .footer-container .section-contact-form .form .error-msg {
+  font-size: 1.2rem;
+  line-height: 12px;
+  letter-spacing: -0.17px;
+  font-weight: 500;
+  color: red;
+  padding-top: 0.5rem;
+  text-align: right;
+}
+.footer .navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 3rem;
+  padding-top: 4rem;
+}
+.footer .navbar .name-logo {
+  color: #ffffff;
+  height: 3.2rem;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.444444px;
+}
+.footer .navbar .nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 3.2rem;
+  z-index: 2;
+}
+.footer .navbar .nav-list .nav-list-item {
+  list-style: none;
+}
+.footer .navbar .nav-list .nav-list-item .logo {
+  width: 25px;
+  height: 25px;
+}
+.footer .navbar {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 4.7rem;
+  padding-bottom: 9.2rem;
+  border-top: 2px solid #aeaeae;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding-bottom: 0;
+    padding: 0 0 0 3rem;
+  }
+  .header .header-container {
+    max-width: 768px;
+  }
+  .header .section-hero {
+    gap: 6rem;
+    width: 60%;
+    padding: 6rem 0;
+  }
+  .header .section-hero h1 {
+    font-size: 7.2rem;
+    line-height: 7.2rem;
+    letter-spacing: -2.04545px;
+  }
+  .header .section-hero p {
+    width: 90%;
+  }
+  .header .section-hero .image-profile {
+    width: 32.2rem;
+  }
+  .header .section-hero .pattern-circle {
+    right: 0;
+    bottom: 5rem;
+  }
+  .header .section-hero .pattern-rings {
+    top: 10%;
+  }
+  .section-skills {
+    padding: 0 3rem;
+  }
+  .section-skills .skills-container {
+    max-width: 768px;
+  }
+  .section-skills .skills-container .skills {
+    padding: 5.2rem 0;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 0;
+  }
+  .section-projects {
+    padding: 5rem 3rem 15rem 3rem;
+  }
+  .section-projects .projects-container {
+    max-width: 768px;
+  }
+  .section-projects .projects-header {
+    padding-bottom: 6rem;
+  }
+  .section-projects .projects-header h2 {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -2.04545px;
+  }
+  .section-projects .projects {
+    row-gap: 10rem;
+    column-gap: 2.2rem;
+  }
+  .section-projects .projects .project {
+    position: relative;
+  }
+  .section-projects .projects .project .project-image {
+    position: static;
+  }
+  .section-projects .projects .project .project-image .hover-options {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    justify-content: left;
+    opacity: 1;
+    transform: translate(0, 0);
+    top: auto;
+    bottom: -5rem;
+    left: 0;
+  }
+  .footer .pattern-rings {
+    top: 70%;
+    transform: translateX(-70%);
+  }
+  .footer .footer-container {
+    max-width: 445px;
+  }
+  .footer .footer-container .section-contact-form {
+    grid-template-columns: 1fr;
+    gap: 4.8rem;
+  }
+  .footer .footer-container .section-contact-form .contact-form-text {
+    text-align: center;
+  }
+  .footer .footer-container .section-contact-form .contact-form-text h2 {
+    font-size: 7.2rem;
+  }
+  .footer .navbar {
+    max-width: 709px;
+    padding: 4rem 3rem 4rem 3rem;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 700px) {
+  .header {
+    padding: 0;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+  .header .header-container {
+    max-width: 375px;
+    padding: 0 1.6rem;
+  }
+  .header .header-container .navbar {
+    max-width: 154px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    gap: 2rem;
+  }
+  .header .header-container .navbar .name-logo {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.33px;
+    width: 12.9rem;
+  }
+  .header .header-container .navbar .nav-list {
+    gap: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .header .header-container .navbar .nav-list .nav-list-item svg {
+    scale: 0.8;
+  }
+  .header .section-hero {
+    padding-top: 28rem;
+    align-items: center;
+    width: 100%;
+    gap: 2.4rem;
+  }
+  .header .section-hero h1 {
+    font-size: 40px;
+    line-height: 40px;
+    /* or 100% */
+    text-align: center;
+    letter-spacing: -1.13636px;
+  }
+  .header .section-hero p {
+    font-size: 16px;
+    line-height: 26px;
+    /* or 162% */
+    text-align: center;
+    width: 100%;
+  }
+  .header .section-hero .image-profile {
+    width: 17.4rem;
+    right: 50%;
+    transform: translateX(50%);
+  }
+  .header .section-hero .pattern-circle {
+    bottom: 48%;
+  }
+  .header .section-hero .pattern-rings {
+    z-index: -6;
+    top: 22%;
+  }
+  .section-skills .skills-container {
+    max-width: 345px;
+    margin: 0 auto;
+  }
+  .section-skills .skills-container .skills {
+    grid-template-columns: 1fr;
+    row-gap: 2.4rem;
+    text-align: center;
+  }
+  .section-skills .skills-container .skills .skill .skill-name {
+    font-size: 32px;
+    line-height: 40px;
+    /* identical to box height, or 125% */
+    text-align: center;
+    letter-spacing: -1px;
+  }
+  .section-skills .skills-container .skills .skill .experience {
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+    text-align: center;
+  }
+  .section-projects {
+    padding: 5rem 1.6rem 15rem 1.6rem;
+  }
+  .section-projects .projects-container {
+    max-width: 375px;
+  }
+  .section-projects .projects-header {
+    padding-bottom: 6rem;
+  }
+  .section-projects .projects-header h2 {
+    font-size: 40px;
+    line-height: 40px;
+    /* identical to box height, or 100% */
+    letter-spacing: -1.13636px;
+  }
+  .section-projects .projects {
+    grid-template-columns: 1fr;
+    row-gap: 10rem;
+    column-gap: 2.2rem;
+  }
+  .section-projects .projects .project {
+    position: relative;
+  }
+  .section-projects .projects .project .project-image {
+    position: static;
+  }
+  .section-projects .projects .project .project-image .hover-options {
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    justify-content: left;
+    opacity: 1;
+    transform: translate(0, 0);
+    top: auto;
+    bottom: -5rem;
+    left: 0;
+  }
+  .footer .footer-container {
+    padding: 0 1.6rem 0 1.6rem;
+  }
+  .footer .footer-container .section-contact-form .contact-form-text {
+    gap: 2rem;
+  }
+  .footer .footer-container .section-contact-form .contact-form-text h2 {
+    font-size: 40px;
+    line-height: 40px;
+    /* identical to box height, or 100% */
+    text-align: center;
+    letter-spacing: -1.13636px;
+  }
+  .footer .footer-nav .navbar {
+    max-width: 375px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem 0;
+    gap: 2rem;
+  }
+  .footer .footer-nav .navbar .name-logo {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.33px;
+    width: 12.9rem;
+  }
+  .footer .footer-nav .navbar .nav-list {
+    max-width: 154px;
+    gap: 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .footer .footer-nav .navbar .nav-list .nav-list-item svg {
+    scale: 0.8;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

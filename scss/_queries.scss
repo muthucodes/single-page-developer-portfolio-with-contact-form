@@ -1,0 +1,336 @@
+@media (max-width: 1200px) {
+  @mixin Navbar-Styling {
+    .navbar {
+      padding: 3rem;
+    }
+  }
+
+  .header {
+    padding-bottom: 0;
+    padding: 0 0 0 3rem;
+
+    .header-container {
+      max-width: 768px;
+    }
+
+    .section-hero {
+      gap: 6rem;
+      width: 60%;
+      padding: 6rem 0;
+
+      h1 {
+        font-size: 7.2rem;
+        line-height: 7.2rem;
+        letter-spacing: -2.04545px;
+      }
+
+      p {
+        width: 90%;
+      }
+
+      .image-profile {
+        width: 32.2rem;
+      }
+
+      .pattern-circle {
+        right: 0;
+        bottom: 5rem;
+      }
+
+      .pattern-rings {
+        top: 10%;
+      }
+    }
+  }
+
+  .section-skills {
+    padding: 0 3rem;
+    .skills-container {
+      max-width: 768px;
+      .skills {
+        padding: 5.2rem 0;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 0;
+      }
+    }
+  }
+
+  .section-projects {
+    padding: 5rem 3rem 15rem 3rem;
+    .projects-container {
+      max-width: 768px;
+    }
+    .projects-header {
+      padding-bottom: 6rem;
+
+      h2 {
+        font-size: 72px;
+        line-height: 72px;
+        letter-spacing: -2.04545px;
+      }
+    }
+
+    .projects {
+      row-gap: 10rem;
+      column-gap: 2.2rem;
+      .project {
+        position: relative;
+        .project-image {
+          position: static;
+          .hover-options {
+            background-color: transparent;
+            width: auto;
+            height: auto;
+            // position: static;
+            flex-direction: row;
+            justify-content: left;
+
+            opacity: 1;
+            transform: translate(0, 0);
+            top: auto;
+            bottom: -5rem;
+
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .pattern-rings {
+      top: 70%;
+      transform: translateX(-70%);
+    }
+    .footer-container {
+      max-width: 445px;
+
+      .section-contact-form {
+        grid-template-columns: 1fr;
+        gap: 4.8rem;
+
+        .contact-form-text {
+          text-align: center;
+
+          h2 {
+            font-size: 7.2rem;
+          }
+        }
+      }
+    }
+
+    .navbar {
+      max-width: 709px;
+      padding: 4rem 3rem 4rem 3rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .header {
+    // max-width: 375px;
+    padding: 0;
+    margin: 0 auto;
+    padding-left: 0;
+
+    .header-container {
+      max-width: 375px;
+      padding: 0 1.6rem;
+      .navbar {
+        max-width: 154px;
+        margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 0;
+        gap: 2rem;
+
+        .name-logo {
+          font-size: 2.4rem;
+          line-height: 3.2rem;
+          letter-spacing: -0.33px;
+          width: 12.9rem;
+        }
+
+        .nav-list {
+          // gap: 1rem;
+          gap: 0;
+          width: 100%;
+          justify-content: space-between;
+
+          .nav-list-item {
+            svg {
+              scale: 0.8;
+            }
+          }
+        }
+      }
+    }
+
+    .section-hero {
+      padding-top: 28rem;
+      align-items: center;
+      width: 100%;
+      gap: 2.4rem;
+
+      h1 {
+        font-size: 40px;
+        line-height: 40px;
+        /* or 100% */
+
+        text-align: center;
+        letter-spacing: -1.13636px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 26px;
+        /* or 162% */
+
+        text-align: center;
+        width: 100%;
+      }
+
+      .image-profile {
+        width: 17.4rem;
+        right: 50%;
+        transform: translateX(50%);
+      }
+
+      .pattern-circle {
+        bottom: 48%;
+      }
+
+      .pattern-rings {
+        z-index: -6;
+        top: 22%;
+      }
+    }
+  }
+
+  .section-skills {
+    .skills-container {
+      max-width: 345px;
+      // padding: 0 1.6rem;
+      margin: 0 auto;
+      .skills {
+        grid-template-columns: 1fr;
+        row-gap: 2.4rem;
+        text-align: center;
+        .skill {
+          .skill-name {
+            font-size: 32px;
+            line-height: 40px;
+            /* identical to box height, or 125% */
+
+            text-align: center;
+            letter-spacing: -1px;
+          }
+          .experience {
+            font-size: 16px;
+            line-height: 26px;
+            /* identical to box height, or 162% */
+
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .section-projects {
+    padding: 5rem 1.6rem 15rem 1.6rem;
+    .projects-container {
+      max-width: 375px;
+    }
+    .projects-header {
+      padding-bottom: 6rem;
+
+      h2 {
+        font-size: 40px;
+        line-height: 40px;
+        /* identical to box height, or 100% */
+
+        letter-spacing: -1.13636px;
+      }
+    }
+
+    .projects {
+      grid-template-columns: 1fr;
+      row-gap: 10rem;
+      column-gap: 2.2rem;
+      .project {
+        position: relative;
+        .project-image {
+          position: static;
+          .hover-options {
+            background-color: transparent;
+            width: auto;
+            height: auto;
+            // position: static;
+            flex-direction: row;
+            justify-content: left;
+
+            opacity: 1;
+            transform: translate(0, 0);
+            top: auto;
+            bottom: -5rem;
+
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .footer {
+    .footer-container {
+      padding: 0 1.6rem 0 1.6rem;
+      .section-contact-form {
+        .contact-form-text {
+          gap: 2rem;
+
+          h2 {
+            font-size: 40px;
+            line-height: 40px;
+            /* identical to box height, or 100% */
+
+            text-align: center;
+            letter-spacing: -1.13636px;
+          }
+        }
+      }
+    }
+    .footer-nav {
+      .navbar {
+        max-width: 375px;
+        margin: 0 auto;
+
+        flex-direction: column;
+        align-items: center;
+        padding: 3rem 0;
+        gap: 2rem;
+
+        .name-logo {
+          font-size: 2.4rem;
+          line-height: 3.2rem;
+          letter-spacing: -0.33px;
+          width: 12.9rem;
+        }
+
+        .nav-list {
+          max-width: 154px;
+          // gap: 1rem;
+          gap: 0;
+          width: 100%;
+          justify-content: space-between;
+
+          .nav-list-item {
+            svg {
+              scale: 0.8;
+            }
+          }
+        }
+      }
+    }
+  }
+}
