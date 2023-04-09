@@ -18,7 +18,7 @@ const iconHTML = `<i class="fa fa-solid fa-circle-exclamation error-icon"></i>`;
 const validateInput = function (element) {
   if (obtainValue(element) === "") {
     let div = document.createElement("div");
-    // console.log("element created");
+
     div.className = "error-msg";
     div.innerText = `Sorry, ${element.getAttribute(
       "placeholder"
